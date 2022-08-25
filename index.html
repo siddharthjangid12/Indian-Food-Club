@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food site</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .img{
+            background-image: url("apple1.jpg");
+            height: 110vh;
+            width: 100%;
+            background-size: 100% 100%;
+        }
+        .head{
+            background-color: red;
+            width: 100%;
+            height: 60px;
+        }
+        .left{
+            float: left;
+            width: 30%;
+        }
+        .right{
+            float: right;
+            width: 70%;
+          }
+
+          .left h2{
+            line-height: 60px;
+            padding-left: 40px;
+            color: white;
+          }
+          .left h2:hover{
+            color: yellow;
+          }
+          
+          .right ul li{
+            line-height: 60px;
+            margin-left: 20px;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+          }
+          .right ul li:hover{
+            color: yellow;
+          }
+          .right ul{
+            margin-left: 430px;
+          }
+          .main{
+            margin-top: 140px;
+            border: 2px solid yellow;
+            height: 290px;
+            width: 290px;
+            border-radius: 20px;
+            margin-left: 150px;
+          }
+          input{
+            width: 250px;
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            height: 20px;
+          }
+          form{
+            margin-top: 30px;
+          }
+          form h3{
+            color: white;
+            text-align: center;
+            padding-bottom: 20px;
+          }
+          #sub{
+            background-color: rgb(242, 21, 21);
+            color: white;
+            border-radius: 30px;
+            border: 1px solid rgb(242, 21, 21);
+          }
+          #sub:hover{
+            background-color: white;
+            color: rgb(242, 21, 21);
+          }
+    </style>
+</head>
+<body>
+    <div class="img">
+      <div class="head">
+        <div class="left">
+          <h2>Indian Food</h2>
+        </div>
+
+        <div class="right">
+          <ul>
+            <li>Home</li>
+            <li>Order</li>
+            <li>About us</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+       </div>
+      
+       <div class="main">
+        <form action="action.php">
+          <h3>Welcome To Indian Food Club</h3>
+          <input type="text" placeholder="Enter Your First Name">
+          <input type="text" placeholder="Enter Your Last Name">
+          <input type="text" placeholder="Enter Your Father Name">
+          <input type="text" placeholder="Enter Your Mobile Number">
+          <input type="email" placeholder="Enter Your Email">
+          <input type="submit" value="Submit Now" id="sub">
+        </form>
+       </div>
+
+    </div>
+
+</body>
+</html>
